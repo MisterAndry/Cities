@@ -34,7 +34,7 @@ class Cities(object):
             count -= 1
         return city[count]
 
-    # окончена ли игра (игра окначивается если больше нет городов, начинающихся на нужную букву)
+    # окончена ли игра (нет городов, начинающихся на нужную букву)
     def is_game_over(self):
         cur_let = self.which_letter(self.current_city, self.dnt_use_let)
         for city, value in self.db_cities.items():
